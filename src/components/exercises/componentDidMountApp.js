@@ -15,14 +15,17 @@ class App extends Component {
         .then(data => {
             this.setState({
                 loading: false,
-                people: data
+                people: data,
             })
         });
     };
     render() {
+        const luke = <div className="luke">
+                <p>Hi! My name is {this.state.people.name}</p>
+        </div>;
         return (
             <main>
-                <div>{this.state.loading ? `Please wait` : this.state.people.name}</div>
+                <div>{this.state.loading ? `Please wait` : luke}</div>
             </main>
         )
     }

@@ -10,13 +10,4 @@ function JokeUnit (props) {
     )
 }
 
-// function JokeUnit (props) {
-//     return (
-//         <div className="joke-unit">
-//             <p style={{display: props.question ? "block" : "none", fontWeight: "bold"}}>Q: {props.question}</p>
-//             <p>{ props.question ? `A: ${props.punchLine}` : `${props.punchLine}` }</p>
-//         </div>
-//     )
-// }
-
 export default JokeUnit;
